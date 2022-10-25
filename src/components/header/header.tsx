@@ -8,7 +8,7 @@ import HeaderNavigation from './headerNavigation';
 const restrictionPathnames = ['/maintenance-mode'];
 
 type Props = {
-  isHomePage: boolean
+  isHomePage?: boolean
 }
 
 const Header: FC<Props> = ({ isHomePage }) => {

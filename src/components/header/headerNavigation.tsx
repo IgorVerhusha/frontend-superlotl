@@ -24,7 +24,7 @@ import HeaderLogo from '@components/header/header.logo';
 import classnames from 'classnames';
 
 type Props = {
-  isHomePage: boolean
+  isHomePage?: boolean
 }
 
 const HeaderNavigation: FC<Props> = ({ isHomePage }) => {
