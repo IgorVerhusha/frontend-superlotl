@@ -4,7 +4,7 @@ import footer from 'public/assets/img/home-page/footer/footer.jpg';
 import light from 'public/assets/img/home-page/faq/light.png';
 import styles from './styles.module.scss';
 import { ACCORDION_ITEMS } from '@constants/home-page';
-import Accordion from '@containers/HomePage/components/Accordion';
+import { Accordion } from '@containers/HomePage/components/Accordion';
 import HomePageMain from '@containers/HomePage/modules/Main';
 import BeginningHomePage from '@containers/HomePage/modules/Beginning';
 import MintWaterway from '@containers/HomePage/modules/MintWaterway';

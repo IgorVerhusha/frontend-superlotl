@@ -9,31 +9,30 @@
 
 .accordionItem {
   width: 34.375vw;
-  margin: 0 0 0.938vw 0;
   border-bottom: 0.052vw solid rgba(255, 255, 255, 0.15);
   user-select: none;
   overflow: hidden;
-  max-height: 130px;
+  max-height: 3.646vw;
   transition: 0.3s max-height, 0.3s border-color;
   &:hover {
     border-color: #ff4cbd;
 
   }
   &.show {
-    max-height: 15.625vw;
+    max-height: 15.625vw !important;
 
 
-    .accordionContent {
-      padding: 0.365vw 0 1.51vw 2.344vw;
-      max-height: none;
-    }
+    //.accordionContent {
+    //  padding: 0.365vw 0 1.51vw 2.344vw;
+    //  max-height: none;
+    //}
   }
 }
 
 .accordionTitle {
   font-size: 1.354vw;
   line-height: calc(36 / 26);
-  padding: 0.365vw 0 0.625vw 2.344vw;
+  padding: 0.915vw 0 1.175vw 2.344vw;
   position: relative;
   transition: 0.3s color;
   &:before,
@@ -82,7 +81,9 @@
   font-size: 1.146vw;
   line-height: calc(32 / 22);
   opacity: 0.6;
-  max-height: 0;
+  padding: 0.365vw 0 1.51vw 2.344vw;
+  //max-height: 0;
+  //transition: 0.3s max-height;
 }
 
 .accordionWrap {
@@ -95,7 +96,7 @@
   .accordionItem {
     width: 44.141vw;
     &.show {
-      max-height: 80.18vw !important;
+      max-height: 34.18vw !important;
     }
   }
 
@@ -157,6 +158,9 @@
 
   .accordionItem {
     width: 100%;
+    &.show {
+      max-height: 80.18vw !important;
+    }
   }
 
   .accordionTitle {
